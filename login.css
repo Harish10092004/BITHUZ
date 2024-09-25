@@ -1,0 +1,265 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image:url(https://img.freepik.com/free-photo/black-friday-sales-sign-neon-light_23-2151833076.jpg?t=st=1727167903~exp=1727171503~hmac=d5c5ee336825a7417657b4c065b755fbdd414740eb5e7b1221455f631eaa9571&w=1060) ;
+    background-size: cover;
+}
+.login-container{
+   border: 1px solid black;
+   width: fit-content;
+   margin-top: 50px;
+   margin-left: 100px;
+   border-radius: 10px;
+   background-color: rgba(35, 199, 231, 0.635); /* semi-transparent background */
+   padding: 30px 75px 20px;  
+   font-family: Arial, Helvetica, sans-serif ;
+
+}
+
+.py-3 { 
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+} 
+
+ul { 
+    margin-top: 0; 
+    margin-bottom: 1rem;
+} 
+
+.nav { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+    padding-left: 0; 
+    margin-bottom: 0; 
+    list-style: none;
+} 
+
+
+.custom-tabs { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1px; 
+    background-color: #f7f9fa; 
+    border: 1px solid #dee2e6; 
+    border-radius: 0.25rem;
+} 
+
+
+
+
+.nav-link { 
+    display: block; 
+    padding: 0.5rem 1rem;
+} 
+ 
+
+.nav-link:hover { 
+    text-decoration: none;
+} 
+
+.nav-tabs .nav-link  { 
+    border: 4px solid #e6151500; 
+    border-top-left-radius: 2px; 
+    border-top-right-radius: 2px;
+} 
+
+.nav-link.active { 
+    background-color: #65d5d5; 
+    color: #fff; 
+    border-color: #007bff;
+} 
+
+.nav-tabs .nav-link  { 
+    border: 1px solid transparent; 
+    border-top-left-radius: 0.25rem; 
+    border-top-right-radius: 0.25rem; 
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+} 
+
+.nav-tabs .nav-link:hover  { 
+    border-color: #e9ecef #e9ecef #dee2e6;
+} 
+
+.nav-tabs .nav-link.active  { 
+    color: white; 
+    background: linear-gradient(to bottom right, #2196f0 1%, #0033cc 100%); 
+    border-color: #dee2e6 #dee2e6 #fff;
+} 
+
+.nav-tabs .nav-link:hover  { 
+    background-color: #e9ecef;
+} 
+
+b { 
+    font-weight: bolder;
+} 
+.col-12 { 
+    position: relative; 
+    width: 100%; 
+    min-height: 1px; 
+    padding-right: 10px; 
+    padding-left: 10px;
+} 
+
+.col-12 { 
+    -webkit-box-flex: 0; 
+    -ms-flex: 0 0 100%; 
+    flex: 0 0 100%; 
+    max-width: 100%;
+} 
+
+.input-group { 
+    position: relative; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+    -webkit-box-align: stretch; 
+    -ms-flex-align: stretch; 
+    align-items: stretch; 
+    width: 100%;
+} 
+
+.mb-3 { 
+    margin-bottom: 1rem!important;
+} 
+
+.input-group-prepend { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+} 
+
+.input-group-prepend { 
+    margin-right: -1px;
+} 
+
+input { 
+    margin: 0; 
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size: inherit; 
+    line-height: inherit;
+} 
+
+input { 
+    overflow: visible;
+} 
+
+.form-control { 
+    display: block; 
+    width: 100%; 
+    padding: 0.375rem 0.75rem; 
+    font-size: 0.875rem; 
+    line-height: 1.5; 
+    color: #4F5467; 
+    background-color: #fff; 
+    background-clip: padding-box; 
+    border: 1px solid #e9ecef; 
+    border-radius: 2px; 
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; 
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; 
+    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+} 
+
+.form-control-lg { 
+    padding: 0.5rem 1rem; 
+    font-size: 1.09375rem; 
+    line-height: 1.5; 
+    border-radius: 2px;
+} 
+
+.input-group > .form-control  { 
+    position: relative; 
+    -webkit-box-flex: 1; 
+    -ms-flex: 1 1 auto; 
+    flex: 1 1 auto; 
+    width: 1%; 
+    margin-bottom: 0;
+} 
+
+.input-group > .form-control:not(:first-child)  { 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0;
+} 
+
+.input-group-text { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    align-items: center; 
+    padding: 0.375rem 0.75rem; 
+    margin-bottom: 0; 
+    font-size: 0.875rem; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    color: #4F5467; 
+    text-align: center; 
+    white-space: nowrap; 
+    background-color: #f8f9fa; 
+    border: 1px solid #e9ecef; 
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.input-group > .input-group-prepend > .input-group-text  { 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+} 
+
+
+.Forgot_new{
+    margin-top: 10px;
+}
+a{
+    color: #e9ecef;
+    text-decoration: none;
+    display: inline;
+}
+h6{
+    display: inline;
+    padding: 40px;
+}
+a:hover{
+    color:brown;
+    text-decoration:none;
+}
+.login_button{
+    justify-content: center;
+    text-align: center;
+    
+}
+button{
+    color: #0033cc;
+    background-color: #e9ecef;
+    padding: 10px;
+    width: 80px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+button:hover{
+    background: linear-gradient(to bottom right, #2196f0 1%, #0033cc 100%); 
+    color: white;
+    border:none;
+}
+
+
+
+
+
+
+
+
+
