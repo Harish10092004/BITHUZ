@@ -1,0 +1,731 @@
+/* General body and container styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    background-color: lavender;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header styles */
+header.headerBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.mobileMenu {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+/* Branding (logo) styles */
+.branding img {
+    height: 50px;
+    width: auto;
+}
+
+/* Top menu styles */
+.topMenu {
+    display: flex;
+    gap: 15px;
+}
+
+.topMenuLink {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topMenuLink:hover {
+    background-color: #333;
+    color:aliceblue;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .mobileMenu {
+        display: block;
+    }
+
+    .topMenu {
+        display: none;
+    }
+
+    .mobileMenu.active + .topMenu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        padding: 10px;
+    }
+}
+/* General container and wrapper styles */
+.home-banner {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Search Block Styles */
+.searchBlock {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.searchTitle {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.searchInputBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.searchFullBlock {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.homeSearchTextbox {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 250px;
+    color: #333;
+}
+
+.locationInputField {
+    border-right: 2px solid #ccc;
+}
+
+.businessInputField {
+    border-right: 2px solid #ccc;
+}
+
+.searchButtonBlock {
+    background-color:darkslategrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.searchButtonBlock:hover {
+    background-color:darkcyan;
+}
+
+.searchButton {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.searchIcon {
+    margin-left: 10px;
+}
+
+/* Home Categories Block Styles */
+/* General container and wrapper styles */
+.homeCategoriesBlock {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Categories Grid */
+.categoriesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Category Card Styles */
+.categoryCard {
+    background-color:rgb(134, 174, 182);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    max-width: 280px;
+}
+
+.categoryCard img {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.categoryInfo {
+    padding: 12px;
+}
+
+.categoryInfo h3 {
+    font-size: 13px;
+    color:black;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Hover Effect for Cards */
+.categoryCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px dodgerblue;
+}
+/* Container styling */
+/* General Styling for Featured Businesses Block */
+.homeFBBlock {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    margin: 20px 0;
+}
+
+.homeFBBlock .wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading Styling */
+.secondaryHeading {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Featured Businesses List Styling */
+.homeFBListBlock {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.homeFBList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Each Business Item */
+.ypApprovedItem {
+    flex: 1 1 calc(33.33% - 30px);
+    max-width: calc(33.33% - 30px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px darkslategrey;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ypApprovedItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px darkslategrey;
+}
+
+/* Business Image Styling */
+.eachFBImage {
+    position: relative;
+    padding: 20px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+
+.eachFBImage img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.eachFBImage:hover img {
+    transform: scale(1.05);
+}
+
+.ypApprovedBlock {
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    background-color:green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Business Name Link */
+.eachFBLink {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.eachFBLink:hover {
+    color:blue;
+}
+
+/* Rating and Reviews Block */
+.eachFBRatingBlock {
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+}
+
+.rating {
+    background-color: #ffcc00;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.ratingCountLink {
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.ratingCountLink:hover {
+    text-decoration: underline;
+}
+
+/* Location Block */
+.eachFBLocation {
+    font-size: 14px;
+    color: darkcyan;
+    margin: 10px 15px 20px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .ypApprovedItem {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .secondaryHeading {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ypApprovedItem {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* General container styling */
+.container.homePopular {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: lavender;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px darkgrey;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.secondaryHeading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Popular Left Block */
+.popularLeftBlock {
+    width: 100%;
+}
+
+/* Popular This Week Block */
+.popularThisWeekBlock ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popularThisWeekBlock li {
+    padding: 20px 0;
+}
+
+/* Popular Item */
+.eachPopular {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left section for popular item */
+.eachPopularLeft {
+    display: flex;
+    gap: 15px;
+}
+
+.eachPopularImage img {
+    width: 170px;
+    height: 170px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Title Block */
+.eachPopularTitleBlock {
+    flex-grow: 1;
+}
+
+.eachPopularTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color:darkmagenta;
+    text-decoration: none;
+}
+
+.eachPopularTitle:hover {
+    text-decoration: underline;
+}
+
+/* Additional Actions (certified, etc.) */
+.eachPopularOtherActions {
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.ypApproved {
+    background: url('ypApproved.png') no-repeat center;
+    width: 20px;
+    height: 20px;
+}
+
+.certified {
+    background: url('certified.png') no-repeat center;
+    width: 20px;
+    height: 20px;
+}
+
+/* Rating Block */
+.eachPopularRatingBlock {
+    margin-top: 10px;
+}
+
+.rating {
+    background-color: gold;
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+}
+
+.ratingCount {
+    margin-left: 10px;
+    color: #666;
+    text-decoration: none;
+}
+
+/* Open/Closed Status */
+.openNow {
+    font-weight: bold;
+    color: #ff0000;
+    margin-top: 5px;
+}
+
+/* Tags List */
+.eachPopularTagsList {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.eachPopularTagsList li {
+    display: inline;
+}
+
+.eachPopularTagsList a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.eachPopularTagsList a:hover {
+    text-decoration: underline;
+}
+
+/* Email Link */
+.eachPopularLink a {
+    color:darkblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Right section for popular item */
+.eachPopularRight {
+    text-align: right;
+}
+
+.businessContact {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.businessArea {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.directionsLocationsBlock a {
+    color:darkred;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.directionsLocationsBlock a:hover {
+    text-decoration: underline;
+}
+
+/* General Footer Styling */
+.container.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.container.copyRights {
+    background-color: #222;
+    color:white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Footer Navigation Blocks */
+.footerNavBlocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.footerEachNavCol {
+    flex: 1;
+    min-width: 220px;
+}
+
+/* Footer Heading */
+.footerHeading {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color:lightskyblue;
+}
+
+/* Footer Navigation List */
+.footerNavList {
+    list-style: none;
+    padding: 0;
+}
+
+.footerNavList li {
+    margin-bottom: 10px;
+}
+
+.footerNavList li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footerNavList li a:hover {
+    color:rgb(0, 255, 255);
+}
+
+/* Footer Social & Mobile */
+.footerSocialMobile {
+    padding: 20px 0;
+}
+
+.footerSocialLinks {
+    display: flex;
+    gap: 15px;
+}
+
+.footerSocialLinks a {
+    display: inline-block;
+    color: #bbb;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #444;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footerSocialLinks a:hover {
+    background-color:lightblue;
+    color: #333;
+}
+
+.footerSocialMobTitle {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Mobile Friendly Design */
+@media (max-width: 768px) {
+    .footerNavBlocks {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footerSocialLinks {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .eachPopular {
+        flex-direction: column;
+    }
+
+    .eachPopularImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .eachOP {
+        flex-direction: column;
+    }
+
+    .eachOPImage img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .ypApprovedItem {
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    .ypApprovedItem:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ypApprovedItem {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .secondaryHeading {
+        font-size: 20px;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .categoryCard img {
+        height: 150px;
+    }
+
+    .categoryInfo h3 {
+        font-size: 16px;
+    }
+}
+.eachCategoryname {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .searchFullBlock {
+        flex-direction: column;
+    }
+
+    .homeSearchTextbox {
+        width: 100%;
+    }
+
+    .homeCategoriesList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eachHomeCategory {
+        width: 80%;
+    }
+}
